@@ -1,0 +1,14 @@
+version: '2'
+services:
+  app:
+    container_name: filestash
+    image: machines/filestash
+    restart: always
+    environment:
+    - APPLICATION_URL=
+    ports:
+    - "8334:8334"
+    extra_hosts:
+      - "www.gstatic.com:127.0.0.1"
+
+
